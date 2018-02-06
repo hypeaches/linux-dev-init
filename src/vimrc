@@ -71,8 +71,13 @@ highlight CursorLine   cterm=NONE ctermbg=blue ctermfg=white guibg=NONE guifg=NO
 let mapleader = ';'
 
 " NERDTree settings
-autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDChristmasTree=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoCenter=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeWinSize=180
 
 " vim-bookmarks settings
 let g:bookmark_auto_close = 1

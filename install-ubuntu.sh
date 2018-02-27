@@ -1,7 +1,6 @@
 #!/bin/bash
 
 install_root_dir=`pwd`
-src_dir=${install_root_dir}/src
 
 apt-get install gcc g++ make -y
 
@@ -13,7 +12,7 @@ fi
 if [ -f ~/.vim/vimrc ]; then
     mv ~/.vim/vimrc ~/.vim/vimrc.bak
 fi
-cp ${src_dir}/vimrc_plugins ~/.vim/vimrc
+cp src/vimrc_plugins ~/.vim/vimrc
 apt-get install git -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "Waiting for vim vundle plugins processed..."
@@ -36,4 +35,4 @@ cd ~/.vim/bundle/YouCompleteMe
 cd $install_root_dir
 
 # This must be the last
-cp ${src}/vimrc ~/.vim/vimrc
+cp src/vimrc ~/.vim/vimrc

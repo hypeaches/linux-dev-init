@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install -y \
+yum install -y \
     gcc \
     g++ \
     make \

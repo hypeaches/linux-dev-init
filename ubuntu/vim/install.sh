@@ -34,3 +34,4 @@ cd ~/.vim/bundle/YouCompleteMe
 cd ${current_dir}
 rm -rf ~/.vim/vimrc
 cp vimrc ~/.vim/vimrc
+cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py ~

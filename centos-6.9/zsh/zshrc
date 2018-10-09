@@ -95,3 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias grep="grep -rn --color=auto"
+# alias -s cpp=vim  #open cpp file in vim
+# alias -s gz="tar xzvf"    #uncompress .gz file by tar

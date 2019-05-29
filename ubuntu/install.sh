@@ -1,6 +1,7 @@
 #!/bin/bash
 
 install_dir_array=(
+    bazel
     blade
     dev
     docker
